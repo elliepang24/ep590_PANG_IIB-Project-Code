@@ -1,0 +1,1 @@
+Place the original National Highways LAS file into this folder that corresponds to the images in rgb images folder. 
