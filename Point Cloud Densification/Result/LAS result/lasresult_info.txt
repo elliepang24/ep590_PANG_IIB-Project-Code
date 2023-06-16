@@ -1,0 +1,1 @@
+Resulting densfied poitn cloud will be produced here. It will combine all the image segments chosen into one final LAS file
