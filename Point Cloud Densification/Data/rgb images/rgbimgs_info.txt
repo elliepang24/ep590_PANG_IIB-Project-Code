@@ -1,0 +1,8 @@
+Place all images you want to register onto the point cloud and therefore section of road captured in the image you want to densify in this folder.
+
+Can place as many as you want, though each image (needs to be 2464 × 2056 pixels) will create a 5 million point density point cloud so be wary of storage and computation. 
+
+Skip out every nth row and column if you want a less dense point cloud just before the conversion back to LAS
+
+Should modify code to work for images not of size 2464 × 2056 (should be easy - change the camera internal parameters and some other parts of code)
+
