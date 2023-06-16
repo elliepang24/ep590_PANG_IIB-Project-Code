@@ -223,36 +223,22 @@ def main():
     not_present = []
     LAS_points = convertLAS2numpy(LAS_path)
     
-    # error_correct = [-1.5,-1,1] 
-    
-    # error_correct = [0,0,0]
-    # error_correct = [-10,0,0] 
-    # error_correct = [10,0,0] 
-    
-    # SETTING WHETHER WE WANNA SKIP POINTS
-    skip_pts = True
-    # every nth column taken, and every nth row, hence nxn times less pointas
-    n = 3
-    
 
     
+    # SETTING WHETHER WE WANT TO SKIP POINTS FOR LOWER DENSIFICATION
+    skip_pts = True
+    # every nth column taken, and every nth row, hence nxn times less points
+    n = 3
+    
+    # ERROR CORRECTIONS - bestEC means best error correction (for first lane of A11 Red lodge, Lane 1)
     bestEC = [-1,-0.5,1.5]
     noEC = [0,0,0]
     error_correct = bestEC
-    testname = f"densfactorcrack_skipn3"
+    testname = f"finalLASresult"
 
+    # for if you want to view the denser PC overlaid onto original - because of interpolation the points conflict as they have same depth so its sometimes hard to see the coinciding points 
     increase_z = 0
-    # a = -1
-    # b = -0.5
-    # c = 1.5
-    # error_correct = [a,b,c]
-    
-    # letters = []
-    # for i in error_correct:
-    #     if type(i) ==float:
-    #         stri = str(i).replace('.','pt')
-    #         i=stri
-    #     letters.append(i)
+
     
     
 
